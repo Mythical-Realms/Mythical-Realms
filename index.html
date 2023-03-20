@@ -1,0 +1,6069 @@
+<!DOCTYPE html>
+<html>
+  <body style="background-color:#333333;">
+    <style>
+      body {
+			font-size: 20px;
+			color: #dddddd;
+		   }
+	a:link	{
+		color: #66dd66;
+		background-color: transparent;
+		text-decoration: none;
+			}
+
+	a:visited {
+		color: green;
+		background-color: transparent;
+		text-decoration: none;
+			  }
+
+	a:hover {
+		color: cyan;
+		background-color: transparent;
+		text-decoration: underline;
+			}
+
+	a:active {
+		color: yellow;
+		background-color: transparent;
+		text-decoration: underline;
+			 }
+
+      h1 {
+           font-size: 2.5em;
+         }
+         h2 {
+           font-size: 2em;
+         }
+         h3 {
+           font-size: 1.8em;
+         }
+      h4 {
+           font-size: 1.6em;
+         }
+         h5 {
+           font-size: 1.4em;
+         }
+         h6 {
+           font-size: 1.2em;
+         }
+    </style>
+
+    <h2>
+      <strong>Mythical Realms</strong>
+    </h2>
+    <hr />
+    <hr />
+	<h6>
+	Version 1.0.3 (3-17-2023): Fixed a bug when a neutral Arch Angel unit casts the Healing spell.
+	</h6>
+    <hr />
+    <hr />
+
+    <ol>
+      <li>
+        <strong>
+          <a href="#Installation">Installation</a>
+          <br />
+        </strong>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#Overview">Overview</a>
+        </strong>
+
+        <ul>
+          <li>
+            <strong>
+              <a href="#New_content">New content</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Boost_under_performers">Boost under performers</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Balance_if_needed">Balance if needed</a>
+            </strong>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#Trait_Changes">Trait Changes</a>
+        </strong>
+
+        <ul>
+          <li>
+            <strong>
+              <a href="#Conjurer">Conjurer</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Charismatic_and_Famous">Charismatic and Famous</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Lifebringer">Lifebringer</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Runemaster">Runemaster</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Sage_Master">Sage Master</a>
+            </strong>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#Spell_Changes">Spell Changes</a>
+        </strong>
+
+        <ul>
+          <li>
+            <strong>
+              <a href="#Arcane">Arcane</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Chaos">Chaos</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Death">Death</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Life">Life</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Nature">Nature</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Sorcery">Sorcery</a>
+            </strong>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#Race_Changes">Race Changes</a>
+        </strong>
+
+        <ul>
+          <li>
+            <strong>
+              <a href="#All_Races">All Races</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>Arcanus Races</strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Barbarians">Barbarians</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Gnolls">Gnolls</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Halflings">Halflings</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#High_Men">High Men</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Klackons">Klackons</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Lizardmen">Lizardmen</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Nomads">Nomads</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Orcs">Orcs</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>Myrror Races</strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Beastmen">Beastmen</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Draconians">Draconians</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Dwarves">Dwarves</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Goblins">Goblins</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Trolls">Trolls</a>
+            </strong>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#New_Races">New Races</a>
+        </strong>
+
+        <ul>
+          <li>
+            <strong>
+              <a href="#Atlanteans">Atlanteans</a>
+            </strong>
+
+            <ul>
+              <li>
+                <strong>
+                  <a href="#Atlantean_Buildings">Atlantean Buildings</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Atlantean_Units">Atlantean Units</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Atlantean_Racial_Modifiers"
+                    >Atlantean Racial Modifiers</a
+                  >
+                </strong>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Fallen_Men">Fallen Men</a>
+            </strong>
+
+            <ul>
+              <li>
+                <strong>
+                  <a href="#Fallen_Men_Buildings">Fallen Men Buildings</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Fallen_Men_Units">Fallen Men Units</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Fallen_Men_Racial_Modifiers"
+                    >Fallen Men Racial Modifiers</a
+                  >
+                </strong>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Kobolds">Kobolds</a>
+            </strong>
+
+            <ul>
+              <li>
+                <strong>
+                  <a href="#Kobold_Buildings">Kobold Buildings</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Kobold_Units">Kobold Units</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Kobold_Racial_Modifiers">Kobold Racial Modifiers</a>
+                </strong>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Mystics">Mystics</a>
+            </strong>
+
+            <ul>
+              <li>
+                <strong>
+                  <a href="#Mystic_Buildings">Mystic Buildings</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Mystic_Units">Mystic Units</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Mystic_Racial_Modifiers">Mystic Racial Modifiers</a>
+                </strong>
+              </li>
+            </ul>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Voltars">Voltars</a>
+            </strong>
+
+            <ul>
+              <li>
+                <strong>
+                  <a href="#Voltar_Buildings">Voltar Buildings</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Voltar_Units">Voltar Units</a>
+                </strong>
+              </li>
+
+              <li>
+                <strong>
+                  <a href="#Voltar_Racial_Modifiers">Voltar Racial Modifiers</a>
+                </strong>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#Hero_Changes">Hero Changes</a>
+        </strong>
+
+        <ul>
+          <li>
+            <strong>
+              <a href="#Hero_Skills">Hero Skills</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Hero_Adjustments">Hero Adjustments</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Mana_Adjustments">Mana Adjustments</a>
+            </strong>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#New_Heroes">New Heroes</a>
+        </strong>
+
+        <ul>
+          <li>
+            <strong>
+              <a href="#Fame_0">Fame 0 Heroes</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Fame_5">Fame 5 Heroes</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Fame_10">Fame 10 Heroes</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Fame_20">Fame 20 Heroes</a>
+            </strong>
+          </li>
+
+          <li>
+            <strong>
+              <a href="#Fame_40_Champions">Fame 40 Champions</a>
+            </strong>
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#Version_History">Version History</a>
+          <br />
+        </strong>
+      </li>
+
+      <li>
+        <strong>
+          <a href="#Contacting_me">Contacting me</a>
+          <br />
+        </strong>
+      </li>
+    </ol>
+
+    <hr />
+    <hr />
+
+    <h4>
+      <strong> <a id="Installation"></a>Installation </strong>
+    </h4>
+
+    <p>
+      <strong>Note!</strong> Using this mod will no longer allow you to play
+      your saved games so make sure to use only before starting a new game.
+    </p>
+
+    <ol>
+      <li>
+        Extract the files in to the ExternalAssets folder by default located at
+        C:\Program Files (x86)\Steam\steamapps\common\MuHa Master of
+        Magic\ExternalAssets\. Overwite the folders when promtped.
+      </li>
+
+      <li>
+        Delete or rename the powerTrainingData.bin in the same folder file
+        before starting your game with the mod installed for the first time.
+      </li>
+
+      <li>
+        When first starting the game after installation, it will take several
+        minutes appearing to be stuck at 50% loading. The game may also show as
+        not responding but let it continue. It is rebuilding the
+        powerTrainingData.bin file that once completed, subsequent game starts
+        will load at normal speed.
+        <br />
+        <br />
+      </li>
+    </ol>
+
+    <hr />
+    <hr />
+
+    <h4>
+      <a id="Overview"></a>
+      <strong>Overview</strong>
+    </h4>
+
+    <p>
+      This mod is not designed to be a total overhaul of the game but it does 
+	  make a fair number of changes. It is also not specifically a difficulty 
+	  increasing mod even though some things have been adjusted. It is 
+	  intended to pursue 3 goals to improve game play while keeping close to 
+	  the original game design. Over time I plan to add more changes and 
+	  have some in the works already. I welcome feedback, bug reports and 
+	  ideas on how to improve upon things.
+    </p>
+
+    <h5>
+      <strong> <a id="New_content"></a>New content </strong>
+    </h5>
+
+    <p>
+      One main focus is adding new things to the game that are (hopefully)
+      similar in design and power to the core game. This mostly is in the form
+      of new, "toys" to play with in game. If possible, additional game options
+      may be added but there are limits to what the game and myself can do.
+    </p>
+
+    <h5>
+      <strong>
+        <a id="Boost_under_performers"></a>Boost under performers
+      </strong>
+    </h5>
+
+    <p>
+      There are quite a few things that, "under perform" in the game.
+      Performance in this case is not just measured by numbers, but also by fun.
+      For example if a niche spell isn't very fun there's a good chance I'll be
+      looking to adjust it. When changes are done, I aim to keep within the
+      theme of the original idea when possible.
+    </p>
+
+    <h5>
+      <strong> <a id="Balance_if_needed"></a>Balance if needed </strong>
+    </h5>
+
+    <p>
+      Aka, "nerfing" things that are over powered. I have taken a very light
+      touch to this, leaving plenty of over powered strategies, spells and units
+      in place for now since that can be fun occasionally.
+    </p>
+
+	<br>
+    <hr />
+    <hr />
+
+    <h4>
+      <a id="Trait_Changes"></a>
+      <strong>Trait Changes</strong>
+    </h4>
+
+    <ul>
+      <li><a id="Conjurer"></a>Conjurer - Starts with Summoning Circle spell.</li>
+
+      <li>
+        <a id="Charismatic_and_Famous"></a>Charismatic and Famous - Both are merged in to one trait. Costs 2 Picks. *Note: The game will not allow deleting a trait so they are mutually exclusive duplicates until a replacement trait is added.
+      </li>
+
+      <li>
+        <a id="Lifebringer"></a>Lifebringer - Now also doubles the effect of the Healing and Mass Healing spells to 10.
+      </li>
+
+      <li><a id="Runemaster"></a>Runemaster - Starts with Dispel Magic spell.</li>
+
+      <li>
+        <a id="Sage_Master"></a>Sage Master - Starts with Recall Hero and Detect Magic spells.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <hr />
+    <hr />
+
+    <h4>
+      <a id="Spell_Changes"></a>
+      <strong>Spell Changes</strong>
+      <br />
+      <br />
+    </h4>
+
+    <h5>
+      <a id="Arcane"></a>
+      <strong>Arcane</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Cosmic Spray - A new, Uncommon spell that launches 3 different spell
+        attacks at once on a target doing nature, chaos, and sorcery damage.
+        Spell damage and mana cost is selectable from 15 to 45 with each bolt
+        doing 5-15 damage.
+      </li>
+    </ul>
+
+    <h5>
+      <br />
+      <a id="Chaos"></a>
+      <strong>Chaos</strong>
+    </h5>
+
+    <ul>
+      <li>Call Chaos - Removed the chance of nothing happening, changed Fire Bolt to Fireball, changed Chaos Channels to Shatter.</li>
+
+      <li>Chaos Spawn - Removed Poison 4, added Illusions Immunity.</li>
+
+      <li>Corruption - Renamed to Ravage, gives 1-5 gold in addition to corruption effects.</li>
+
+      <li>Disrupt - Reduced casting cost to 5 mana.</li>
+
+      <li>Fire Bolt - Maximum of up to 35 mana allowed to be used (up from 25).</li>
+
+      <li>Hell Hounds - Casting cost raised to 60 mana and upkeep to 2 mana.</li>
+
+      <li>Metal Fires - Bonuses raised to +2.</li>
+
+      <li>Shatter - Added -1 Resistance penalty. Decreased cost to 10 mana.</li>
+
+      <li>Warp Creature - Increased Resistance penalty to -3. Reduced casting cost to 15 mana.</li>
+    </ul>
+
+    <h5>
+      <br />
+      <a id="Death"></a>
+      <strong>Death</strong>
+    </h5>
+
+    <ul>
+      <li>Black Channels - Units now retain the ability to earn XP.</li>
+
+      <li>Cloud of Shadow - Moved to Uncommon, swapping places with Subversion. Research Points needed reduced to 620. Upkeep reduced to 2 mana.</li>
+
+      <li>Cruel Unminding - Target now loses 5% - 10% of casting skill.</li>
+
+      <li>Cursed Lands - Gains the effect of Famine's 50% less Food production, Unrest increased by 30%, Cost increased to 200 mana, Upkeep to 5 mana.</li>
+
+      <li>Famine - Replaced by Soul Sacrfice: Sacrifice 10 Hit Points from a friendly unit to damage all enemies for 5 Hit Points. Can create undead, including the friendly unit.</li>
+
+      <li>Subversion - Moved to Rare, swapping places with Cloud of Shadow and replaced with Summon Apparition
+        <br />
+
+        <ul>
+          <li>Research Points = 1300</li>
+
+          <li>Casting Cost = 550 mana</li>
+
+          <li>Upkeep Cost = 8 mana/turn</li>
+
+          <li>Figures = 1</li>
+
+          <li>Movement = 3</li>
+
+          <li>Melee = 15</li>
+
+          <li>Defense = 6</li>
+
+          <li>Resistance = 9</li>
+
+          <li>Hit Points = 20</li>
+
+          <li>+20% To Hit</li>
+
+          <li>Non-Corporeal</li>
+
+          <li>Cause Fear</li>
+
+          <li>Weapon Immunity</li>
+
+          <li>Death Immunity</li>
+
+          <li>Illusions Immunity</li>
+
+          <li>Poison Immunity</li>
+
+          <li>Cold Immunity</li>
+
+          <li>Caster 30 (Death spells)</li>
+
+          <li>
+            Haunt - Melee attacks reduce the target's Resistance by 2.
+            <br />
+            <br />
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        Weakness - Halves melee, ranged, and thrown attack values. Increased
+        casting cost to 10 mana.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Life"></a>
+      <strong>Life</strong>
+    </h5>
+
+    <ul>
+      <li>Holy Arms - Renamed Holy Armaments. Gives all normal units Holy Armor in addition to Holy Weapon. Casting cost increased to 1200 mana. Upkeep increased to 15 mana.</li>
+
+      <li>Heroism - No longer can target heroes.</li>
+
+      <li>Life Force - Effects added to Tranquillity and replaced with a new spell: Greater Healing - Heals one unit to full health. Costs 70 Mana. </li>
+
+      <li>Lionheart - Bonuses reduced to +2 per category.</li>
+
+      <li>Planar Seal - Upkeep increased to 10 mana.</li>
+
+      <li>Prosperity - Casting increased cost to 350 mana. Upkeep increased to 5 mana.</li>
+
+	  <li>Tranquillity - Combined the effects of Life Force in to one spell. Decreased dispel strength to 400. Casting cost increased to 1200 Mana. Upkeep increased to 15 Mana.</li>
+    </ul>
+
+    <h5>
+      <br />
+      <a id="Nature"></a>
+      <strong>Nature</strong>
+    </h5>
+
+    <ul>
+      <li>Behemoth - Defense increased to 14, Hit Points increased to 60.</li>
+
+      <li>Herb Mastery - Renamed to Herbal Invigoration. In addition to completely healing all units at the end of each turn, also gives +1 movement to all owned units. Upkeep increased to 20 mana.</li>
+
+      <li>Nature's Eye - Renamed to Tree of Knowledge. Adds +5 Research bonus and gives defending town units Illusions Immunity. Casting cost increased to 125 mana. Upkeep increased to 3 mana.</li>
+
+      <li>Petrify - Added -3 resistance penalty.</li>
+
+      <li>
+        Stone Giant - Replaced with Archdruids keeping the same Research,
+        Casting, and Upkeep costs
+        <br />
+
+        <ul>
+          <li>Figures = 4</li>
+
+          <li>Movement = 3</li>
+
+          <li>Melee = 5</li>
+
+          <li>Ranged = 5 (Ammo 6)</li>
+
+          <li>Defense = 5</li>
+
+          <li>Resistance = 9</li>
+
+          <li>Hit Points = 5</li>
+
+          <li>+20% To Hit</li>
+
+          <li>Forester</li>
+
+          <li>Scouting 2</li>
+
+          <li>Healer</li>
+
+          <li>Purify</li>
+
+          <li>Caster 20 (Nature spells)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <ul>
+      <li>War Bears - Added +10% To Hit. Reduced casting cost to 60 mana.</li>
+
+      <li>
+        Web - Reduced resistance penalty to -1.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Sorcery"></a>
+      <strong>Sorcery</strong>
+    </h5>
+
+    <ul>
+      <li>Banish - Casting cost increased to 35 mana, resistance penalty increased to -4, removed ability to add more mana to increase resistance penalty.</li>
+
+      <li>Blur - 20% chance to avoid damage.</li>
+
+      <li>Confusion - Resistance penalty reduced to -2.</li>
+
+      <li>Floating Island - Move 2, 15 health.</li>
+
+      <li>Fortress of Flying - Able to be cast on any wizard owned towns. Upkeep reduced to 15 mana.</li>
+
+      <li>Resist Magic - Bonus reduced to +3 resistance.</li>
+
+      <li>Time Stop - Increased upkeep to 500 mana.</li>
+
+      <li>Vertigo - Added -3 save penalty.</li>
+
+      <li>Wind Mastery - Reduced casting cost to 200 mana.</li>
+    </ul>
+
+    <br />
+    <br />
+
+    <hr />
+    <hr />
+
+    <h4>
+      <a id="Race_Changes"></a>
+      <strong>Race Changes</strong>
+    </h4>
+
+    <h5>
+      <br />
+      <a id="All_Races"></a>
+      <strong>All Races</strong>
+    </h5>
+
+    <ul>
+      <li>Triremes, Galleys, and Warships all gain Scouting 1.</li>
+
+      <li>Triremes gain Ranged 6 attack with 8 ammo plus Long Range.</li>
+
+      <li>Galleys ranged attack increased to 8 and gain Long Range.</li>
+
+      <li>
+        All Halberdiers units now have Armor Piercing and Negate First Strike
+        abilities.
+      </li>
+
+      <li>
+        Normal Ranged damage on all units lowered by 1 except where noted.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Barbarians"></a>
+      <strong>Barbarians</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Berserkers Movement raised to 3.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Gnolls"></a>
+      <strong>Gnolls</strong>
+    </h5>
+
+    <ul>
+      <li>Shamans - Gnolls can now make Shaman units (Shrine required).</li>
+
+      <li>
+        Animists' Guild - Gnolls can make this building which unlocks a new
+        unit, Hyenas
+        <br />
+
+        <ul>
+          <li>Construction Cost = 160</li>
+
+          <li>Upkeep Cost = 4 Gold &amp; 1 Food</li>
+
+          <li>Figures = 6</li>
+
+          <li>Movement = 4</li>
+
+          <li>Melee = 4</li>
+
+          <li>Defense = 2</li>
+
+          <li>Resistance = 5</li>
+
+          <li>Hit Points = 3</li>
+
+          <li>
+            First Strike
+            <br />
+            <br />
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Halflings"></a>
+      <strong>Halflings</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Slingers - Requires Fighters' Guild, Ranged still 2.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="High_Elves"></a>
+      <strong>High Elves</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Magicians - Renamed to Druids and now cast Earth to Mud instead of
+        Fireball.
+      </li>
+
+      <li>
+        Pegasi - Increased Hit Points to 8, Increased Melee to 7, Increased
+        Defense to 5. Ranged still 4, added Forester. Cost increased to 200.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="High_Men"></a>
+      <strong>High Men</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Pikemen - Reduced to 4 Melee and cost to 60.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Klackons"></a>
+      <strong>Klackons</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Klackon cities gain 30% unrest reduction if the capitol is also Klackon
+        (up from 20%).
+      </li>
+
+      <li>
+        Shipyards and Maritime Guilds - Klackons can make these buildings which
+        also unlocks construction of Galleys and Warships.
+      </li>
+
+      <li>
+        Engineers - Now have a normal Ranged 1 attack with 8 ammo (doesn't show
+        animation).
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Lizardmen"></a>
+      <strong>Lizardmen</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Animists' Guild - Lizardmen can make this building which unlocks a new
+        unit, Flying Serpents
+        <br />
+
+        <ul>
+          <li>Construction Cost = 120</li>
+
+          <li>Upkeep Cost = 3 Gold &amp; 1 Food</li>
+
+          <li>Figures = 2</li>
+
+          <li>Movement = 4 (flying)</li>
+
+          <li>Melee = 6</li>
+
+          <li>Defense = 6</li>
+
+          <li>Resistance = 8</li>
+
+          <li>Hit Points = 7</li>
+
+          <li>Poison 4</li>
+
+          <li>Illusion Immunity</li>
+
+          <li>
+            Holy Bonus +1
+            <br />
+            <br />
+          </li>
+        </ul>
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Nomads"></a>
+      <strong>Nomads</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Pikemen - Reduced to 4 Melee and cost to 60.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Orcs"></a>
+      <strong>Orcs</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Magicians - Renamed to Storm Callers and now cast Lightning Bolt (20
+        strength) instead of Fireball.
+      </li>
+
+      <li>
+        Wyvern Riders - Increased Melee to 6, added Cold Breath 4, Poison
+        lowered to 4.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Beastmen"></a>
+      <strong>Beastmen</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Magicians - Renamed to Conjurors and now cast Summon Fire Elemental
+        instead of Fireball.
+      </li>
+
+      <li>Centaurs - Ranged still 3, increased ammo to 8, added Forester.</li>
+
+      <li>
+        Manticores - Reduced Poison to 4, Gain Ranged 4 attack (4 ammo),
+        Increased Hit Points to 8, Increased Melee to 7, Increased Defense to 4,
+        Increased Movement to 4.
+      </li>
+
+      <li>
+        Minotaurs - Increased Movement to 3.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Draconians"></a>
+      <strong>Draconians</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Doom Drakes - Requires Fighters' Guild in addition to Stables.
+        Resistance lowered to 6.
+      </li>
+
+      <li>
+        Air Ship - Requires Armory in addition to Ship Yard.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Dwarves"></a>
+      <strong>Dwarves</strong>
+    </h5>
+
+    <ul>
+      <li>Golem - Added Illusions Immunity.</li>
+
+      <li>
+        Steam Cannon - Added Wall Crusher.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Goblins"></a>
+      <strong>Goblins</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Removed unrest bonus from Goblin, Orc, and Troll cities when Goblins are
+        the capitol race.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Trolls"></a>
+      <strong>Trolls</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Mammoth Riders - Added a Ranged 5 Boulder attack (doesn't show
+        animation).
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <hr />
+    <hr />
+
+    <h4>
+      <a id="New_Races"></a>
+      <strong>New Races</strong>
+    </h4>
+
+    <p>
+      All races can make all buildings up to and including Barracks, Builders'
+      Hall, City Walls, Farmers' Market, Foresters' Guild, and Smithy. In the
+	  tables below buildings that have been 
+	  <span style="text-decoration: line-through;">stricken through</span> 
+	  cannot be built. Special racial units in the tables are in 
+	  <strong>bold</strong>. In addition to racial units, these are the other
+	  standard units they can build.
+    </p>
+
+    <table
+      style="border-collapse: collapse; width: 17%; height: 162px;"
+      height="64"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 20.7053%; height: 27px;">
+            <strong>Race</strong>
+          </td>
+
+          <td style="width: 55.7886%; height: 27px;">
+            <strong>Units</strong>
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 20.7053%; height: 27px;">Atlanteans</td>
+
+          <td style="width: 55.7886%; height: 27px;">None</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 20.7053%; height: 27px;">Fallen Men</td>
+
+          <td style="width: 55.7886%; height: 27px;">
+            Triremes, Galleys, Warships, Catapults
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 20.7053%; height: 27px;">Kobolds</td>
+
+          <td style="width: 55.7886%; height: 27px;">Triremes, Galleys</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 20.7053%; height: 27px;">Mystics</td>
+
+          <td style="width: 55.7886%; height: 27px;">
+            Triremes, Galleys, Catapults
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 20.7053%; height: 27px;">Voltars</td>
+
+          <td style="width: 55.7886%; height: 27px;">
+            Triremes, Galleys, Warships, Catapults
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h5></h5>
+
+    <h5>
+      <a id="Atlanteans"></a>
+      <strong>Atlanteans</strong>
+    </h5>
+
+    <p>
+      Atlanteans are a resilient race, born from the magical Myrran sea. Their
+      society is driven by a dark, religious dogma that strives for immortality.
+      Atlanteans have scoured the depths of the oceans, finding powerful and
+      dangerous magics to wield from places few dare to seek.
+    </p>
+
+    <h5>
+      <strong>Racial Info</strong>
+    </h5>
+
+    <ul>
+      <li>Myrran</li>
+
+      <li>Growth Rate -10%, +0.5 power per 1k population, x2.5 base unit costs</li>
+
+      <li>Base units receive +2 resistance, +1 hit points, and Swimming</li>
+
+      <li>Racial Units: Shock Eels, Elders, Medusa</li>
+    </ul>
+
+    <h5>
+      <a id="Atlantean_Buildings"></a>
+      <strong>Atlantean Buildings</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 44%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Armory</td>
+
+          <td style="width: 20.071%;">Fighters' Guild</td>
+
+          <td style="width: 20.0733%;">Armorers' Guild</td>
+
+          <td style="width: 9.74609%;">War College</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Stables</td>
+
+          <td style="width: 20.071%;">Animists' Guild</td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;"
+              >Fantastic Stables (w/ Armorers' Guild)</span
+            >
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shrine</td>
+
+          <td style="width: 20.071%;">Temple</td>
+
+          <td style="width: 20.0733%;">Parthenon</td>
+
+          <td style="width: 9.74609%;">Cathedral</td>
+
+          <td style="width: 16.0579%;">Oracle (w/ University)</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Miners' Guild</td>
+
+          <td style="width: 20.071%;">
+            <span style="text-decoration: line-through;"
+              >Mechanicians' Guild (w/ University)</span
+            >
+          </td>
+
+          <td style="width: 20.0733%;">-</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Library</td>
+
+          <td style="width: 20.071%;">Sages' Guild</td>
+
+          <td style="width: 20.0733%;">University</td>
+
+          <td style="width: 9.74609%;">Alchemists' Guild</td>
+
+          <td style="width: 16.0579%;">
+            <span style="text-decoration: line-through;"
+              >Wizards' Tower (w/ University)</span
+            >
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Marketplace</td>
+
+          <td style="width: 20.071%;">Bank (w/ University)</td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;"
+              >Merchants' Guild (w/ Shipyard)</span
+            >
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">
+            <span style="text-decoration: line-through;"
+              >Shipwrights' Guild</span
+            >
+          </td>
+
+          <td style="width: 20.071%;">
+            <span style="text-decoration: line-through;">Shipyard</span>
+          </td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;"
+              >Maritime Guild (w/ Armory)</span
+            >
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Atlantean_Units"></a>
+      <strong>Atlantean Units</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 65%; height: 276px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Unit</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">
+            <strong>Cost</strong>
+          </td>
+
+          <td style="width: 5.09713%; height: 27px;">
+            <strong>Gold / Food</strong>
+          </td>
+
+          <td style="width: 0.606993%; height: 27px;">
+            <strong
+              >Figures
+              <br />
+            </strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 4.09056%; height: 27px;">
+            <strong>Ranged (Ammo)</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Resistance</strong>
+          </td>
+
+          <td style="width: 2.42062%; height: 27px;">
+            <strong>HP (per Figure)</strong>
+          </td>
+
+          <td style="width: 32.9808%; height: 27px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 9.18595%;">
+            <strong
+              >Building(s) Required
+              <br />
+            </strong>
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 8.51078%; height: 33px;">Settlers</td>
+
+          <td style="width: 0.693039%; height: 33px;">150</td>
+
+          <td style="width: 5.09713%; height: 33px;">3 / 1</td>
+
+          <td style="width: 0.606993%; height: 33px;">1</td>
+
+          <td style="width: 0.597372%; height: 33px;">3</td>
+
+          <td style="width: 0.597372%; height: 33px;">0</td>
+
+          <td style="width: 4.09056%; height: 33px;">-</td>
+
+          <td style="width: 0.597372%; height: 33px;">1</td>
+
+          <td style="width: 0.597372%; height: 33px;">6</td>
+
+          <td style="width: 2.42062%; height: 33px;">20</td>
+
+          <td style="width: 32.9808%; height: 33px;">
+            Create Outpost, Swimming
+          </td>
+
+          <td style="width: 9.18595%;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Spearmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">25</td>
+
+          <td style="width: 5.09713%; height: 27px;">0 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">8</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">2</td>
+
+          <td style="width: 32.9808%; height: 27px;">Swimming</td>
+
+          <td style="width: 9.18595%;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Swordsmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">50</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">2</td>
+
+          <td style="width: 32.9808%; height: 27px;">Large Shield, Swimming</td>
+
+          <td style="width: 9.18595%;">Smithy + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Bowmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">75</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">1 (8)</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">2</td>
+
+          <td style="width: 32.9808%; height: 27px;">Swimming</td>
+
+          <td style="width: 9.18595%;">Sawmill + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Halberdiers</td>
+
+          <td style="width: 0.693039%; height: 27px;">100</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">2</td>
+
+          <td style="width: 32.9808%; height: 27px;">
+            Armor Piercing, Negate First Strike, Swimming
+          </td>
+
+          <td style="width: 9.18595%;">Armory</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Priests</td>
+
+          <td style="width: 0.693039%; height: 27px;">150</td>
+
+          <td style="width: 5.09713%; height: 27px;">3 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 4.09056%; height: 27px;">4 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">9</td>
+
+          <td style="width: 2.42062%; height: 27px;">2</td>
+
+          <td style="width: 32.9808%; height: 27px;">
+            Healing Spell, Healer, Purify, Swimming
+          </td>
+
+          <td style="width: 9.18595%;">Parthenon</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Shock Eels</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">180</td>
+
+          <td style="width: 5.09713%; height: 27px;">4 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">8</td>
+
+          <td style="width: 2.42062%; height: 27px;">2</td>
+
+          <td style="width: 32.9808%; height: 27px;">
+            Lightning Breath 2, Stun, Swimming
+          </td>
+
+          <td style="width: 9.18595%;">Animists' Guild</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Medusa</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">200</td>
+
+          <td style="width: 5.09713%; height: 27px;">5 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">10</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">9</td>
+
+          <td style="width: 2.42062%; height: 27px;">15</td>
+
+          <td style="width: 32.9808%; height: 27px;">
+            First Strike, Poison 6, Stoning Gaze -1, Swimming
+          </td>
+
+          <td style="width: 9.18595%;">Oracle</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Elders</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">240</td>
+
+          <td style="width: 5.09713%; height: 27px;">5 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">5</td>
+
+          <td style="width: 4.09056%; height: 27px;">5 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">5</td>
+
+          <td style="width: 0.597372%; height: 27px;">10</td>
+
+          <td style="width: 2.42062%; height: 27px;">4</td>
+
+          <td style="width: 32.9808%; height: 27px;">
+            Black Prayer Spell, Swimming
+          </td>
+
+          <td style="width: 9.18595%;">Cathedral</td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Atlantean_Racial_Modifiers"></a>
+      <strong>Atlantean Racial Modifiers</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 6.85606%; height: 513px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 3.5461%;">
+            <strong>Arcanus Race</strong>
+          </td>
+
+          <td style="width: 5.78035%;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Barbarians</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Fallen Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Gnolls</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Halflings</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">High Elves</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +30%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">High Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Klackons</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width: 3.5461%;">Kobolds</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Lizardmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +40%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Mystics</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +30%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Nomads</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Orcs</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 3.5461%; height: 27px;">
+            <strong>Myrror Race</strong>
+          </td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Atlanteans</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Beastmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Dark Elves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 3.5461%; height: 27px;">Draconians</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 3.5461%;">Dwarves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+30%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 3.5461%;">Goblins</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 3.5461%;">Trolls</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 3.5461%;">Voltars</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <br />
+      <a id="Fallen_Men"></a>
+      <strong>Fallen Men</strong>
+    </h5>
+
+    <p>
+      Fallen men are the shunned outcasts of High Men civilization. They mostly
+      follow their old societal structure except now they turn away from divine
+      forces in favor of darker paths. Tired of failed diplomacy, they now rely
+      on military might as a way to survive in the world. Fallen Men dabbling in
+      forbidden magics have learned to control hateful Specters and even Demons.
+    </p>
+
+    <h5>
+      <strong>Racial Info</strong>
+    </h5>
+
+    <ul>
+      <li>Arcanian</li>
+
+      <li>Growth Rate +0%, x1 base unit costs</li>
+
+      <li>Base units have no modifiers</li>
+
+      <li>Racial Units: Pikemen, Occultists, Specters</li>
+    </ul>
+
+    <h5>
+      <a id="Fallen_Men_Buildings"></a>
+      <strong>Fallen Men Buildings</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 44%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Armory</td>
+
+          <td style="width: 20.071%;">Fighters' Guild</td>
+
+          <td style="width: 20.0733%;">Armorers' Guild</td>
+
+          <td style="width: 9.74609%;">War College</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Stables</td>
+
+          <td style="width: 20.071%;">Animists' Guild</td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;"
+              >Fantastic Stables (w/ Armorers' Guild)</span
+            >
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shrine</td>
+
+          <td style="width: 20.071%;">Temple</td>
+
+          <td style="width: 20.0733%;">Parthenon</td>
+
+          <td style="width: 9.74609%;">Cathedral</td>
+
+          <td style="width: 16.0579%;">Oracle (w/ University)</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Miners' Guild</td>
+
+          <td style="width: 20.071%;">Mechanicians' Guild (w/ University)</td>
+
+          <td style="width: 20.0733%;">-</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Library</td>
+
+          <td style="width: 20.071%;">Sages' Guild</td>
+
+          <td style="width: 20.0733%;">University</td>
+
+          <td style="width: 9.74609%;">Alchemists' Guild</td>
+
+          <td style="width: 16.0579%;">Wizards' Tower (w/ University)</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Marketplace</td>
+
+          <td style="width: 20.071%;">Bank (w/ University)</td>
+
+          <td style="width: 20.0733%;">Merchants' Guild (w/ Shipyard)</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shipwrights' Guild</td>
+
+          <td style="width: 20.071%;">Shipyard</td>
+
+          <td style="width: 20.0733%;">Maritime Guild (w/ Armory)</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Fallen_Men_Units"></a>
+      <strong>Fallen Men Units</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 65%; height: 276px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Unit</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">
+            <strong>Cost</strong>
+          </td>
+
+          <td style="width: 5.09713%; height: 27px;">
+            <strong>Gold / Food</strong>
+          </td>
+
+          <td style="width: 0.606993%; height: 27px;">
+            <strong
+              >Figures
+              <br />
+            </strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 4.09056%; height: 27px;">
+            <strong>Ranged (Ammo)</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Resistance</strong>
+          </td>
+
+          <td style="width: 2.42062%; height: 27px;">
+            <strong>HP (per Figure)</strong>
+          </td>
+
+          <td style="width: 32.9199%; height: 27px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 9.24692%;">
+            <strong>Building(s) Required</strong>
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 8.51078%; height: 33px;">Settlers</td>
+
+          <td style="width: 0.693039%; height: 33px;">60</td>
+
+          <td style="width: 5.09713%; height: 33px;">3 / 1</td>
+
+          <td style="width: 0.606993%; height: 33px;">1</td>
+
+          <td style="width: 0.597372%; height: 33px;">3</td>
+
+          <td style="width: 0.597372%; height: 33px;">0</td>
+
+          <td style="width: 4.09056%; height: 33px;">-</td>
+
+          <td style="width: 0.597372%; height: 33px;">1</td>
+
+          <td style="width: 0.597372%; height: 33px;">4</td>
+
+          <td style="width: 2.42062%; height: 33px;">10</td>
+
+          <td style="width: 32.9199%; height: 33px;">Create Outpost</td>
+
+          <td style="width: 9.24692%;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Engineers</td>
+
+          <td style="width: 0.693039%; height: 27px;">40</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 32.9199%; height: 27px;">
+            Build Road, Wall Crusher
+          </td>
+
+          <td style="width: 9.24692%;">Builder's Hall</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Spearmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">10</td>
+
+          <td style="width: 5.09713%; height: 27px;">0 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">8</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 32.9199%; height: 27px;">-</td>
+
+          <td style="width: 9.24692%;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Swordsmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">20</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 32.9199%; height: 27px;">Large Shield</td>
+
+          <td style="width: 9.24692%;">Smithy + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Bowmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">30</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">1 (8)</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 32.9199%; height: 27px;">-</td>
+
+          <td style="width: 9.24692%;">Sawmill + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Cavalry</td>
+
+          <td style="width: 0.693039%; height: 27px;">40</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">3</td>
+
+          <td style="width: 32.9199%; height: 27px;">First Strike</td>
+
+          <td style="width: 9.24692%;">Stables + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Pikemen</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">60</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">8</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 32.9199%; height: 27px;">
+            Armor Piercing, Negate First Strike
+          </td>
+
+          <td style="width: 9.24692%;">Armory</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Priests</td>
+
+          <td style="width: 0.693039%; height: 27px;">100</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 4.09056%; height: 27px;">4 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">7</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 32.9199%; height: 27px;">
+            Healer, Healing Spell, Purify
+          </td>
+
+          <td style="width: 9.24692%;">Parthenon</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Occultists</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">120</td>
+
+          <td style="width: 5.09713%; height: 27px;">3 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">5</td>
+
+          <td style="width: 4.09056%; height: 27px;">5 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">5</td>
+
+          <td style="width: 0.597372%; height: 27px;">8</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 32.9199%; height: 27px;">Summon Demon</td>
+
+          <td style="width: 9.24692%;">Wizards' Tower</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Specters</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">200</td>
+
+          <td style="width: 5.09713%; height: 27px;">4 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">10</td>
+
+          <td style="width: 2.42062%; height: 27px;">4</td>
+
+          <td style="width: 32.9199%; height: 27px;">
+            Doom Gaze 2, Magic Immunity, Non-Corporeal, Poison Immunity,
+          </td>
+
+          <td style="width: 9.24692%;">Cathedral</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Fallen_Men_Racial_Modifiers"></a>
+      <strong>Fallen Men Racial Modifiers</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 6.85575%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 4.11523%;">
+            <strong>Arcanus Race</strong>
+          </td>
+
+          <td style="width: 5.78035%;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Barbarians</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Fallen Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Gnolls</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Halflings</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">High Elves</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">High Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +40%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Klackons</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Kobolds</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Lizardmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Mystics</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Nomads</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Orcs</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 4.11523%; height: 27px;">
+            <strong>Myrror Race</strong>
+          </td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Atlanteans</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Beastmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Dark Elves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Draconians</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Dwarves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Goblins</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Trolls</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Voltars</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Kobolds"></a>
+      <strong>Kobolds</strong>
+    </h5>
+
+    <p>
+      Kobolds are small, nimble lizard-like humanoids who have focused their 
+	  culture on the material world over nature. They have made impressive
+	  industrial advancements allowing them to not only defend themselves
+	  but project force when needed. They are well known for creating
+      wacky machines that are horrifyingly effective in battle.
+    </p>
+
+    <h5>
+      <strong>Racial Info</strong>
+    </h5>
+
+    <ul>
+      <li>Arcanian</li>
+
+      <li>Growth +20%, x1.5 base unit costs, 3 production per worker</li>
+
+      <li>Base units receive +2 figures, -1 melee</li>
+
+      <li>Racial Units: Rock Thrower, Igniters, Contraption</li>
+    </ul>
+
+    <h5>
+      <a id="Kobold_Buildings"></a>
+      <strong>Kobold Buildings</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 44%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Armory</td>
+
+          <td style="width: 20.071%;">Fighters' Guild</td>
+
+          <td style="width: 20.0733%;">Armorers' Guild</td>
+
+          <td style="width: 9.74609%;">War College</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;"> 
+		   <span style="text-decoration: line-through;">Stables</span>
+		  </td>
+
+          <td style="width: 20.071%;">
+            <span style="text-decoration: line-through;">Animists' Guild</span>
+          </td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;"
+              >Fantastic Stables (w/ Armorers' Guild)</span
+            >
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shrine</td>
+
+          <td style="width: 20.071%;">Temple</td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;">Parthenon</span>
+          </td>
+
+          <td style="width: 9.74609%;">
+            <span style="text-decoration: line-through;">Cathedral</span>
+          </td>
+
+          <td style="width: 16.0579%;">
+            <span style="text-decoration: line-through;"
+              >Oracle (w/ University)</span
+            >
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Miners' Guild</td>
+
+          <td style="width: 20.071%;">
+            <span style="text-decoration: line-through;"
+              >Mechanicians' Guild (w/ University)</span
+            >
+          </td>
+
+          <td style="width: 20.0733%;">-</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Library</td>
+
+          <td style="width: 20.071%;">Sages' Guild</td>
+
+          <td style="width: 20.0733%;">University</td>
+
+          <td style="width: 9.74609%;">Alchemists' Guild</td>
+
+          <td style="width: 16.0579%;">
+            <span style="text-decoration: line-through;"
+              >Wizards' Tower (w/ University)</span
+            >
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Marketplace</td>
+
+          <td style="width: 20.071%;">Bank (w/ University)</td>
+
+          <td style="width: 20.0733%;">Merchants' Guild (w/ Shipyard)</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shipwrights' Guild</td>
+
+          <td style="width: 20.071%;">Shipyard</td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;"
+              >Maritime Guild (w/ Armory)</span
+            >
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Kobold_Units"></a>
+      <strong>Kobold Units</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 65%; height: 303px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Unit</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">
+            <strong>Cost</strong>
+          </td>
+
+          <td style="width: 5.09713%; height: 27px;">
+            <strong>Gold / Food</strong>
+          </td>
+
+          <td style="width: 0.606993%; height: 27px;">
+            <strong
+              >Figures
+              <br />
+            </strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 4.09056%; height: 27px;">
+            <strong>Ranged (Ammo)</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Resistance</strong>
+          </td>
+
+          <td style="width: 2.42062%; height: 27px;">
+            <strong>HP (per Figure)</strong>
+          </td>
+
+          <td style="width: 30.7845%; height: 27px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 11.3823%;">
+            <strong>Building(s) Required</strong>
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 8.51078%; height: 33px;">Settlers</td>
+
+          <td style="width: 0.693039%; height: 33px;">90</td>
+
+          <td style="width: 5.09713%; height: 33px;">3 / 1</td>
+
+          <td style="width: 0.606993%; height: 33px;">1</td>
+
+          <td style="width: 0.597372%; height: 33px;">3</td>
+
+          <td style="width: 0.597372%; height: 33px;">0</td>
+
+          <td style="width: 4.09056%; height: 33px;">-</td>
+
+          <td style="width: 0.597372%; height: 33px;">2</td>
+
+          <td style="width: 0.597372%; height: 33px;">4</td>
+
+          <td style="width: 2.42062%; height: 33px;">10</td>
+
+          <td style="width: 30.7845%; height: 33px;">Create Outpost</td>
+
+          <td style="width: 11.3823%;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Engineers</td>
+
+          <td style="width: 0.693039%; height: 27px;">60</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7845%; height: 27px;">
+            Build Road, Wall Crusher
+          </td>
+
+          <td style="width: 11.3823%;">Builder's Hall</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Spearmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">15</td>
+
+          <td style="width: 5.09713%; height: 27px;">0 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">8</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7845%; height: 27px;">-</td>
+
+          <td style="width: 11.3823%;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Swordsmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">30</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">8</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7845%; height: 27px;">Large Shield</td>
+
+          <td style="width: 11.3823%;">Smithy + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Bowmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">45</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">1 (8)</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7845%; height: 27px;">-</td>
+
+          <td style="width: 11.3823%;">Sawmill + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Rock Thrower</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">80</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">0</td>
+
+          <td style="width: 4.09056%; height: 27px;">*5 (8)</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 2.42062%; height: 27px;">8</td>
+
+          <td style="width: 30.7845%; height: 27px;">*Boulder Ranged Attack</td>
+
+          <td style="width: 11.3823%;">Armory</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Shamans</td>
+
+          <td style="width: 0.693039%; height: 27px;">90</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">2 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7845%; height: 27px;">Healer, Purify</td>
+
+          <td style="width: 11.3823%;">Shrine</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Igniters</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">160</td>
+
+          <td style="width: 5.09713%; height: 27px;">4 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">3 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">3</td>
+
+          <td style="width: 30.7845%; height: 27px;">
+            Bleeding, Fire Breath 1, Magical Ranged Attack
+          </td>
+
+          <td style="width: 11.3823%;">Alchemists' Guild + Armory</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Contraption</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">200</td>
+
+          <td style="width: 5.09713%; height: 27px;">5 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">14</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">8</td>
+
+          <td style="width: 2.42062%; height: 27px;">16</td>
+
+          <td style="width: 30.7845%; height: 27px;">
+            Armor Piercing, Wall Crusher, Web
+          </td>
+
+          <td style="width: 11.3823%;">Armorers' Guild</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Kobold_Racial_Modifiers"></a>
+      <strong>Kobold Racial Modifiers</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 6.85575%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 4.11523%;">
+            <strong>Arcanus Race</strong>
+          </td>
+
+          <td style="width: 5.78035%;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Barbarians</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Fallen Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Gnolls</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Halflings</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">High Elves</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">High Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Klackons</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Kobolds</td>
+
+          <td style="width: 5.78035%; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Lizardmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            0%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Mystics</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Nomads</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Orcs</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 4.11523%; height: 27px;">
+            <strong>Myrror Race</strong>
+          </td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Atlanteans</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Beastmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Dark Elves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Draconians</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Dwarves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+40%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Goblins</td>
+
+          <td style="width: 5.78035%; text-align: center;">0%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Trolls</td>
+
+          <td style="width: 5.78035%; text-align: center;">0%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Voltars</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h5>
+      <a id="Mystics"></a>
+      <strong>Mystics</strong>
+    </h5>
+
+    <p>
+      Mystics are elves hailing from another world. While striving to expand
+      their knowledge of magical forces, they have become extremely entwined
+      with magic making it their religion. Their explorations in to other realms
+      are often peaceful but occasionally hostilities force them to fight where
+      they employ unusual magics against their enemies.
+    </p>
+
+    <h5>
+      <strong>Racial Info</strong>
+    </h5>
+
+    <ul>
+      <li>Arcanian</li>
+
+      <li>Growth Rate -20%, x2 base unit costs, +1 Power per population</li>
+
+      <li>Base units receive +2 resistance</li>
+
+      <li>Racial Units: Anomaly, Crystal Drakes, Illusionists</li>
+    </ul>
+
+    <h5>
+      <a id="Mystic_Buildings"></a>
+      <strong>Mystic Buildings</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 44%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Armory</td>
+
+          <td style="width: 20.071%;">Fighters' Guild</td>
+
+          <td style="width: 20.0733%;">Armorers' Guild</td>
+
+          <td style="width: 9.74609%;">War College</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Stables</td>
+
+          <td style="width: 20.071%;">Animists' Guild</td>
+
+          <td style="width: 20.0733%;">
+            Fantastic Stables (w/ Armorers' Guild)
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shrine</td>
+
+          <td style="width: 20.071%;">Temple</td>
+
+          <td style="width: 20.0733%;">Parthenon</td>
+
+          <td style="width: 9.74609%;">Cathedral</td>
+
+          <td style="width: 16.0579%;">
+            <span style="text-decoration: line-through;"
+              >Oracle (w/ University)</span
+            >
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Miners' Guild</td>
+
+          <td style="width: 20.071%;">Mechanicians' Guild (w/ University)</td>
+
+          <td style="width: 20.0733%;">-</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Library</td>
+
+          <td style="width: 20.071%;">Sages' Guild</td>
+
+          <td style="width: 20.0733%;">University</td>
+
+          <td style="width: 9.74609%;">Alchemists' Guild</td>
+
+          <td style="width: 16.0579%;">Wizards' Tower (w/ University)</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Marketplace</td>
+
+          <td style="width: 20.071%;">Bank (w/ University)</td>
+
+          <td style="width: 20.0733%;">Merchants' Guild (w/ Shipyard)</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shipwrights' Guild</td>
+
+          <td style="width: 20.071%;">Shipyard</td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;"
+              >Maritime Guild (w/ Armory)</span
+            >
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Mystic_Units"></a>
+      <strong>Mystic Units</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 65%; height: 303px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Unit</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">
+            <strong>Cost</strong>
+          </td>
+
+          <td style="width: 5.09713%; height: 27px;">
+            <strong>Gold / Food</strong>
+          </td>
+
+          <td style="width: 0.606993%; height: 27px;">
+            <strong
+              >Figures
+              <br />
+            </strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 4.09056%; height: 27px;">
+            <strong>Ranged (Ammo)</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Resistance</strong>
+          </td>
+
+          <td style="width: 2.42062%; height: 27px;">
+            <strong>HP (per Figure)</strong>
+          </td>
+
+          <td style="width: 30.7235%; height: 27px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 11.4433%; height: 27px;">
+            <strong>Building(s) Required</strong>
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 8.51078%; height: 33px;">Settlers</td>
+
+          <td style="width: 0.693039%; height: 33px;">120</td>
+
+          <td style="width: 5.09713%; height: 33px;">3 / 1</td>
+
+          <td style="width: 0.606993%; height: 33px;">1</td>
+
+          <td style="width: 0.597372%; height: 33px;">3</td>
+
+          <td style="width: 0.597372%; height: 33px;">0</td>
+
+          <td style="width: 4.09056%; height: 33px;">-</td>
+
+          <td style="width: 0.597372%; height: 33px;">2</td>
+
+          <td style="width: 0.597372%; height: 33px;">6</td>
+
+          <td style="width: 2.42062%; height: 33px;">10</td>
+
+          <td style="width: 30.7235%; height: 33px;">Create Outpost</td>
+
+          <td style="width: 11.4433%; height: 33px;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Spearmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">20</td>
+
+          <td style="width: 5.09713%; height: 27px;">0 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">8</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7235%; height: 27px;">-</td>
+
+          <td style="width: 11.4433%; height: 27px;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Swordsmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">40</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 4.09056%; height: 27px;"></td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7235%; height: 27px;">Large Shield</td>
+
+          <td style="width: 11.4433%; height: 27px;">Smithy + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Bowmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">60</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">1 (8)</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7235%; height: 27px;">-</td>
+
+          <td style="width: 11.4433%; height: 27px;">Sawmill + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Cavalry</td>
+
+          <td style="width: 0.693039%; height: 27px;">80</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">3</td>
+
+          <td style="width: 30.7235%; height: 27px;">First Strike</td>
+
+          <td style="width: 11.4433%; height: 27px;">Stable + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Halberdiers</td>
+
+          <td style="width: 0.693039%; height: 27px;">80</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7235%; height: 27px;">
+            Armor Piercing, Negate First Strike
+          </td>
+
+          <td style="width: 11.4433%; height: 27px;">Armory</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Priests</td>
+
+          <td style="width: 0.693039%; height: 27px;">150</td>
+
+          <td style="width: 5.09713%; height: 27px;">3 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 4.09056%; height: 27px;">4 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">9</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7235%; height: 27px;">
+            Healer, Healing Spell, Purify
+          </td>
+
+          <td style="width: 11.4433%; height: 27px;">Parthenon</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Anomaly</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">160</td>
+
+          <td style="width: 5.09713%; height: 27px;">4 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">10</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">8</td>
+
+          <td style="width: 0.597372%; height: 27px;">15</td>
+
+          <td style="width: 2.42062%; height: 27px;">10</td>
+
+          <td style="width: 30.7235%; height: 27px;">
+            Invisibility, Mana Leak Spell, Teleporting
+          </td>
+
+          <td style="width: 11.4433%; height: 27px;">
+            Animists' Guild + University
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong
+              >Crystal Drakes
+              <br />
+            </strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">200</td>
+
+          <td style="width: 5.09713%; height: 27px;">5 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">7</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">7</td>
+
+          <td style="width: 0.597372%; height: 27px;">7</td>
+
+          <td style="width: 2.42062%; height: 27px;">7</td>
+
+          <td style="width: 30.7235%; height: 27px;">
+            Flying, Frost Breath 7, Cold Immunity, Scouting 1
+          </td>
+
+          <td style="width: 11.4433%; height: 27px;">Fantastic Stables</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Illusionists</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">200</td>
+
+          <td style="width: 5.09713%; height: 27px;">5 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">*2 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 0.597372%; height: 27px;">10</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 30.7235%; height: 27px;">
+            *Illusion Ranged Attack, Missile Immunity, Vertigo Spell
+          </td>
+
+          <td style="width: 11.4433%; height: 27px;">Wizards' Tower</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Mystic_Racial_Modifiers"></a>
+      <strong>Mystic Racial Modifiers</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 6.85575%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 4.11523%;">
+            <strong>Arcanus Race</strong>
+          </td>
+
+          <td style="width: 5.78035%;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Barbarians</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Fallen Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Gnolls</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Halflings</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">High Elves</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">High Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Klackons</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Kobolds</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Lizardmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Mystics</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Nomads</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Orcs</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 4.11523%; height: 27px;">
+            <strong>Myrror Race</strong>
+          </td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Atlanteans</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +30%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Beastmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Dark Elves</td>
+
+          <td style="width: 5.78035%; text-align: center;">0%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Draconians</td>
+
+          <td style="width: 5.78035%; text-align: center;">+10%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Dwarves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+30%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Goblins</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Trolls</td>
+
+          <td style="width: 5.78035%; text-align: center;">+30%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Voltars</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Voltars"></a>
+      <strong>Voltars</strong>
+    </h5>
+
+    <p>
+      Voltars are aggressive, humanoids who have lightning courses through their
+      bodies. Their society focuses on military build up for conquest, both of
+      the martial and magical kind with little regard for defense. Voltar
+      spiritual beliefs are simple, they worship the raw force of lightning and
+      strive to emulate everything that is.
+    </p>
+
+    <h5>
+      <strong>Racial Info</strong>
+    </h5>
+
+    <ul>
+      <li>Myrran</li>
+
+      <li>Growth Rate -20%, x3 base unit costs, +0.5 Power per population</li>
+
+      <li>Base units receive -1 defense, +2 resistance, armor piercing</li>
+
+      <li>Racial Units: Tempest, Evokers, Storm Jammer</li>
+    </ul>
+
+    <h5>
+      <a id="Voltar_Buildings"></a>
+      <strong>Voltar Buildings</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 44%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Armory</td>
+
+          <td style="width: 20.071%;">Fighters' Guild</td>
+
+          <td style="width: 20.0733%;">Armorers' Guild</td>
+
+          <td style="width: 9.74609%;">War College</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Stables</td>
+
+          <td style="width: 20.071%;">Animists' Guild</td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;"
+              >Fantastic Stables (w/ Armorers' Guild)</span
+            >
+          </td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shrine</td>
+
+          <td style="width: 20.071%;">Temple</td>
+
+          <td style="width: 20.0733%;">
+            <span style="text-decoration: line-through;">Parthenon</span>
+          </td>
+
+          <td style="width: 9.74609%;">
+            <span style="text-decoration: line-through;">Cathedral</span>
+          </td>
+
+          <td style="width: 16.0579%;">
+            <span style="text-decoration: line-through;"
+              >Oracle (w/ University)</span
+            >
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Miners' Guild</td>
+
+          <td style="width: 20.071%;">Mechanicians' Guild (w/ University)</td>
+
+          <td style="width: 20.0733%;">-</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Library</td>
+
+          <td style="width: 20.071%;">Sages' Guild</td>
+
+          <td style="width: 20.0733%;">University</td>
+
+          <td style="width: 9.74609%;">Alchemists' Guild</td>
+
+          <td style="width: 16.0579%;">Wizards' Tower (w/ University)</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Marketplace</td>
+
+          <td style="width: 20.071%;">Bank (w/ University)</td>
+
+          <td style="width: 20.0733%;">Merchants' Guild (w/ Shipyard)</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 10.9466%;">Shipwrights' Guild</td>
+
+          <td style="width: 20.071%;">Shipyard</td>
+
+          <td style="width: 20.0733%;">Maritime Guild (w/ Armory)</td>
+
+          <td style="width: 9.74609%;">-</td>
+
+          <td style="width: 16.0579%;">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Voltar_Units"></a>
+      <strong>Voltar Units</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 65%; height: 276px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Unit</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">
+            <strong>Cost</strong>
+          </td>
+
+          <td style="width: 5.09713%; height: 27px;">
+            <strong>Gold / Food</strong>
+          </td>
+
+          <td style="width: 0.606993%; height: 27px;">
+            <strong
+              >Figures
+              <br />
+            </strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 4.09056%; height: 27px;">
+            <strong>Ranged (Ammo)</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.597372%; height: 27px;">
+            <strong>Resistance</strong>
+          </td>
+
+          <td style="width: 2.42062%; height: 27px;">
+            <strong>HP (per Figure)</strong>
+          </td>
+
+          <td style="width: 33.2861%; height: 27px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 8.88075%;">
+            <strong>Building(s) Required</strong>
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 8.51078%; height: 33px;">Settlers</td>
+
+          <td style="width: 0.693039%; height: 33px;">180</td>
+
+          <td style="width: 5.09713%; height: 33px;">3 / 1</td>
+
+          <td style="width: 0.606993%; height: 33px;">1</td>
+
+          <td style="width: 0.597372%; height: 33px;">3</td>
+
+          <td style="width: 0.597372%; height: 33px;">0</td>
+
+          <td style="width: 4.09056%; height: 33px;">-</td>
+
+          <td style="width: 0.597372%; height: 33px;">1</td>
+
+          <td style="width: 0.597372%; height: 33px;">6</td>
+
+          <td style="width: 2.42062%; height: 33px;">10</td>
+
+          <td style="width: 33.2861%; height: 33px;">
+            Armor Piercing, Create Outpost
+          </td>
+
+          <td style="width: 8.88075%; height: 33px;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Spearmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">30</td>
+
+          <td style="width: 5.09713%; height: 27px;">0 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">8</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 33.2861%; height: 27px;">Armor Piercing</td>
+
+          <td style="width: 8.88075%; height: 27px;">None</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Swordsmen</td>
+
+          <td style="width: 0.693039%; height: 27px;">60</td>
+
+          <td style="width: 5.09713%; height: 27px;">1 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">3</td>
+
+          <td style="width: 4.09056%; height: 27px;"></td>
+
+          <td style="width: 0.597372%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 33.2861%; height: 27px;">
+            Armor Piercing, Large Shield
+          </td>
+
+          <td style="width: 8.88075%; height: 27px;">Smithy + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Halberdiers</td>
+
+          <td style="width: 0.693039%; height: 27px;">90</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">6</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 33.2861%; height: 27px;">
+            Armor Piercing, Negate First Strike
+          </td>
+
+          <td style="width: 8.88075%; height: 27px;">Armory</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">Cavalry</td>
+
+          <td style="width: 0.693039%; height: 27px;">120</td>
+
+          <td style="width: 5.09713%; height: 27px;">2 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">3</td>
+
+          <td style="width: 33.2861%; height: 27px;">
+            Armor Piercing, First Strike
+          </td>
+
+          <td style="width: 8.88075%; height: 27px;">Stable + Barracks</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Tempest</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">200</td>
+
+          <td style="width: 5.09713%; height: 27px;">4 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">5</td>
+
+          <td style="width: 4.09056%; height: 27px;">-</td>
+
+          <td style="width: 0.597372%; height: 27px;">5</td>
+
+          <td style="width: 0.597372%; height: 27px;">9</td>
+
+          <td style="width: 2.42062%; height: 27px;">10</td>
+
+          <td style="width: 33.2861%; height: 27px;">
+            Armor Piercing, Flying, Lightning Breath 4, Poison Immunity,
+            Scouting 1, Stoning Immunity, Stun
+          </td>
+
+          <td style="width: 8.88075%; height: 27px;">Animists' Guild</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong>Evokers</strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">240</td>
+
+          <td style="width: 5.09713%; height: 27px;">5 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">10</td>
+
+          <td style="width: 4.09056%; height: 27px;">3 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">2</td>
+
+          <td style="width: 0.597372%; height: 27px;">10</td>
+
+          <td style="width: 2.42062%; height: 27px;">1</td>
+
+          <td style="width: 33.2861%; height: 27px;">
+            Armor Piercing, Magical Ranged Attack, Missile Immunity, Warp
+            Lightning Spell
+          </td>
+
+          <td style="width: 8.88075%; height: 27px;">Wizards' Tower</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.51078%; height: 27px;">
+            <strong
+              >Storm Jammer
+              <br />
+            </strong>
+          </td>
+
+          <td style="width: 0.693039%; height: 27px;">240</td>
+
+          <td style="width: 5.09713%; height: 27px;">5 / 1</td>
+
+          <td style="width: 0.606993%; height: 27px;">1</td>
+
+          <td style="width: 0.597372%; height: 27px;">4</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 4.09056%; height: 27px;">5 (4)</td>
+
+          <td style="width: 0.597372%; height: 27px;">5</td>
+
+          <td style="width: 0.597372%; height: 27px;">6</td>
+
+          <td style="width: 2.42062%; height: 27px;">20</td>
+
+          <td style="width: 33.2861%; height: 27px;">
+            Armor Piercing, Flying, Scouting 2, Transporter
+          </td>
+
+          <td style="width: 8.88075%; height: 27px;">
+            Maritime Guild + Armorers' Guild
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Voltar_Racial_Modifiers"></a>
+      <strong>Voltar Racial Modifiers</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 6.85575%;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 4.11523%;">
+            <strong>Arcanus Race</strong>
+          </td>
+
+          <td style="width: 5.78035%;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Barbarians</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Fallen Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Gnolls</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Halflings</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">High Elves</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">High Men</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Klackons</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Kobolds</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Lizardmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Mystics</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Nomads</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Orcs</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 4.11523%; height: 27px;">
+            <strong>Myrror Race</strong>
+          </td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            <strong>Unrest Modifier</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Atlanteans</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +10%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Beastmen</td>
+
+          <td style="width: 5.78035%; height: 27px; text-align: center;">
+            +20%
+          </td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Dark Elves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr style="height: 27px;">
+          <td style="width: 4.11523%; height: 27px;">Draconians</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Dwarves</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Goblins</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Trolls</td>
+
+          <td style="width: 5.78035%; text-align: center;">+20%</td>
+        </tr>
+
+        <tr>
+          <td style="width: 4.11523%;">Voltars</td>
+
+          <td style="width: 5.78035%; text-align: center;">0%</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <br />
+
+    <hr />
+    <hr />
+
+    <h4>
+      <a id="Hero_Changes"></a>
+      <strong>Hero Changes</strong>
+    </h4>
+
+    <h5>
+      <a id="Hero_Skills"></a>
+      <strong>Hero Skills</strong>
+    </h5>
+
+    <ul>
+      <li>
+        Blademaster - Renamed to, "Accuracy" and made available all hero types.
+      </li>
+
+      <li>
+        Convoker - New skill for mage heroes only. Gives +1.5 Power per level to
+        your Wizard (no super version).
+      </li>
+
+      <li>
+        Defender - New skill for fighter heroes only. Grants +0.25 Defense
+        (+0.33 for super) per level to normal units in the stack.
+      </li>
+
+      <li>
+        Legendary - Now gives +4 gold (+6 with super) per level in addition to
+        Fame and made available to all hero types.
+      </li>
+
+      <li>
+        Noble - Removed from the game and its effects have been combined in to
+        Legendary at a reduced amount.
+        <br />
+        <br />
+      </li>
+    </ul>
+
+    <h5>
+      <a id="Hero_Adjustments"></a>
+      <strong>Hero Adjustments</strong>
+    </h5>
+
+    <ul>
+      <li>
+        <strong>Fame 0</strong>
+        <br />
+
+        <ul>
+          <li>Brax - Added Defender</li>
+
+          <li>B'Shan - Changed Noble to Legendary</li>
+
+          <li>Rakir - One additional Fighter pick</li>
+
+          <li>Valana - 5 melee, 7 hp</li>
+
+          <li>
+            Zaldron - One additional Mage pick
+            <br />
+            <br />
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Fame 5</strong>
+        <br />
+
+        <ul>
+          <li>Greyfairer - One additional Mage pick</li>
+
+          <li>
+            Reywind - 5 melee, 5 ranged, 5 defense, one additional Any pick
+          </li>
+
+          <li>
+            Tumu - 5 melee
+            <br />
+            <br />
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Fame 10</strong>
+        <br />
+
+        <ul>
+          <li>Aureus - Melee/Staff wielder, one additional Any pick</li>
+
+          <li>Jaer - 7 ranged, Added Convoker</li>
+
+          <li>
+            Marcus - 5 ranged
+            <br />
+            <br />
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Fame 20</strong>
+        <br />
+
+        <ul>
+          <li>Spyder - One additional Fighter pick</li>
+
+          <li>
+            Yramrag - Added Convoker
+            <br />
+            <br />
+          </li>
+        </ul>
+      </li>
+
+      <li>
+        <strong>Fame 20/40 (Champions)</strong>
+        <br />
+
+        <ul>
+          <li>
+            Mystic X - 40 fame required, 500 gold hiring cost, 10 gold upkeep, 8
+            melee, 8 ranged, 5 defense, caster 10&nbsp;
+          </li>
+
+          <li>Alorra - 8 ranged</li>
+
+          <li>Deth Stryke - 8 melee</li>
+
+          <li>Elana the Priestess - Changed Noble to Convoker</li>
+
+          <li>Sir Harold the Knight - Changed Noble to Defender</li>
+        </ul>
+      </li>
+    </ul>
+
+    <p></p>
+
+    <h5>
+      <a id="Mana_Adjustments"></a>
+      <strong>Mana Adjustments</strong>
+    </h5>
+
+    <p>
+      Heroes receive a diminishing percentage of total casting skill from
+      leveling beginning at level 4. This balancing change was made because
+      magical ranged attacks consumed 3 mana per shot in the original game but
+      now have their own ammo pool. Additionally, changes were also made that
+      reduce the casting cost of many combat spells from 10%-35%. This
+      contradicts the purpose of reducing the mana pools in the first place
+      while giving a slight buff to fantastic casting units. By eliminating this
+      change, the numbers mostly balance each other out and are consistent in
+      mana costs. Here's an example of what this does to a hero with a Caster 10
+      skill.
+    </p>
+
+    <table
+      style="border-collapse: collapse; width: 37.7594%; height: 333px;"
+      height="269"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="text-align: center;">
+          <td style="width: 0.726744%; height: 36px;">Level</td>
+
+          <td style="width: 8.14904%; height: 36px;">
+            Caster Percentage - Default
+          </td>
+
+          <td style="width: 5.30592%; height: 36px;">Caster 10 - Default</td>
+
+          <td style="width: 8.1835%; height: 36px;">
+            Caster Percentage - Modded
+          </td>
+
+          <td style="width: 4.94672%; height: 36px;">Caster 10 - Modded</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">1</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            100%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">10</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">10</td>
+        </tr>
+
+        <tr style="height: 33px;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">2</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            100%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">20</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">20</td>
+        </tr>
+
+        <tr style="height: 33px;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">3</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            100%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">30</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">30</td>
+        </tr>
+
+        <tr style="height: 33px;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">4</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            94%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">37</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">40</td>
+        </tr>
+
+        <tr style="height: 33px;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">5</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            88%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">44</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">50</td>
+        </tr>
+
+        <tr style="height: 33px;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">6</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            82%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">49</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">60</td>
+        </tr>
+
+        <tr style="height: 33px;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">7</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            76%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">53</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">70</td>
+        </tr>
+
+        <tr style="height: 33px;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">8</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            70%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">56</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">80</td>
+        </tr>
+
+        <tr style="height: 33px;">
+          <td style="width: 0.726744%; height: 33px; text-align: center;">9</td>
+
+          <td style="width: 8.14904%; height: 33px; text-align: center;">
+            64%
+          </td>
+
+          <td style="width: 5.30592%; height: 33px; text-align: center;">57</td>
+
+          <td style="width: 8.1835%; text-align: center; height: 33px;">
+            100%
+          </td>
+
+          <td style="width: 4.94672%; height: 33px; text-align: center;">90</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <hr />
+    <hr />
+
+    <h4>
+      <a id="New_Heroes"></a>
+      <strong>New Heroes</strong>
+    </h4>
+
+    <p>
+      Below are the new heroes sorted by Fame required. Special note that
+      Lythdria and Zarvonax have, "Any#" pick which means they can get skill
+      except Arcane Power.
+    </p>
+
+    <h5>
+      <a id="Fame_0"></a>
+      <strong>Fame 0, Hiring Cost = 100g, Upkeep 2g</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 80%; height: 120px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 12px; text-align: center;">
+          <td style="width: 8.45288%; height: 12px;">
+            <strong>Name</strong>
+          </td>
+
+          <td style="width: 1.33862%; height: 12px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 1.18989%; height: 12px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 1.78483%; height: 12px;">
+            <strong>Ranged</strong>
+          </td>
+
+          <td style="width: 1.6361%; height: 12px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 1.14031%; height: 12px;">
+            <strong>Resist</strong>
+          </td>
+
+          <td style="width: 1.28904%; height: 12px;">
+            <strong>HP</strong>
+          </td>
+
+          <td style="width: 3.9379%; height: 12px;">
+            <strong>Items</strong>
+          </td>
+
+          <td style="width: 2.9855%; height: 12px;">
+            <strong>Caster</strong>
+          </td>
+
+          <td style="width: 21.1608%; height: 12px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 3.3337%; height: 12px;">
+            <strong>Picks</strong>
+          </td>
+
+          <td style="width: 16.2652%; height: 12px;">
+            <strong>Spells</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.45288%; height: 27px;">Klicky the Klackon</td>
+
+          <td style="width: 1.33862%; height: 27px;">4</td>
+
+          <td style="width: 1.18989%; height: 27px;">5</td>
+
+          <td style="width: 1.78483%; height: 27px;">-</td>
+
+          <td style="width: 1.6361%; height: 27px;">6</td>
+
+          <td style="width: 1.14031%; height: 27px;">6</td>
+
+          <td style="width: 1.28904%; height: 27px;">7</td>
+
+          <td style="width: 3.9379%; height: 27px;">Melee</td>
+
+          <td style="width: 2.9855%; height: 27px;">-</td>
+
+          <td style="width: 21.1608%; height: 27px;">Fire Breath 3, Lucky</td>
+
+          <td style="width: 3.3337%; height: 27px;">-</td>
+
+          <td style="width: 16.2652%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.45288%; height: 27px;">Quaspolk the Alchemist</td>
+
+          <td style="width: 1.33862%; height: 27px;">4</td>
+
+          <td style="width: 1.18989%; height: 27px;">4</td>
+
+          <td style="width: 1.78483%; height: 27px;">5</td>
+
+          <td style="width: 1.6361%; height: 27px;">4</td>
+
+          <td style="width: 1.14031%; height: 27px;">6</td>
+
+          <td style="width: 1.28904%; height: 27px;">6</td>
+
+          <td style="width: 3.9379%; height: 27px;">Melee / Staff</td>
+
+          <td style="width: 2.9855%; height: 27px;">5</td>
+
+          <td style="width: 21.1608%; height: 27px;">None</td>
+
+          <td style="width: 3.3337%; height: 27px;">2 Any</td>
+
+          <td style="width: 16.2652%; height: 27px;">
+            Giant Strength, Stone Skin
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.45288%; height: 27px;">
+            Skirrathi the Pyromancer
+          </td>
+
+          <td style="width: 1.33862%; height: 27px;">4</td>
+
+          <td style="width: 1.18989%; height: 27px;">1</td>
+
+          <td style="width: 1.78483%; height: 27px;">6</td>
+
+          <td style="width: 1.6361%; height: 27px;">4</td>
+
+          <td style="width: 1.14031%; height: 27px;">7</td>
+
+          <td style="width: 1.28904%; height: 27px;">5</td>
+
+          <td style="width: 3.9379%; height: 27px;">Staff</td>
+
+          <td style="width: 2.9855%; height: 27px;">7.5</td>
+
+          <td style="width: 21.1608%; height: 27px;">Arcane Power</td>
+
+          <td style="width: 3.3337%; height: 27px;">1 Mage</td>
+
+          <td style="width: 16.2652%; height: 27px;">
+            Fire Bolt, Fireball, Wall of Fire, Immolation
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 8.45288%; height: 27px;">Umsha the Sorceress</td>
+
+          <td style="width: 1.33862%; height: 27px;">4</td>
+
+          <td style="width: 1.18989%; height: 27px;">1</td>
+
+          <td style="width: 1.78483%; height: 27px;">6</td>
+
+          <td style="width: 1.6361%; height: 27px;">4</td>
+
+          <td style="width: 1.14031%; height: 27px;">8</td>
+
+          <td style="width: 1.28904%; height: 27px;">5</td>
+
+          <td style="width: 3.9379%; height: 27px;">Staff</td>
+
+          <td style="width: 2.9855%; height: 27px;">10</td>
+
+          <td style="width: 21.1608%; height: 27px;">None</td>
+
+          <td style="width: 3.3337%; height: 27px;">1 Mage</td>
+
+          <td style="width: 16.2652%; height: 27px;">
+            Dispel Magic True, Disenchant True, Flight
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Fame_5"></a>
+      <strong>Fame 5, Hiring Cost = 150g, Upkeep 3g</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 80%; height: 147px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 12px; text-align: center;">
+          <td style="width: 5.53327%; height: 12px;">
+            <strong>Name</strong>
+          </td>
+
+          <td style="width: 0.495786%; height: 12px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.644522%; height: 12px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 0.495786%; height: 12px;">
+            <strong>Ranged</strong>
+          </td>
+
+          <td style="width: 0.6941%; height: 12px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.495786%; height: 12px;">
+            <strong>Resist</strong>
+          </td>
+
+          <td style="width: 0.495786%; height: 12px;">
+            <strong>HP</strong>
+          </td>
+
+          <td style="width: 2.61582%; height: 12px;">
+            <strong>Items</strong>
+          </td>
+
+          <td style="width: 1.18989%; height: 12px;">
+            <strong>Caster</strong>
+          </td>
+
+          <td style="width: 14.0659%; height: 12px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 1.83955%; height: 12px;">
+            <strong>Picks</strong>
+          </td>
+
+          <td style="width: 10.5939%; height: 12px;">
+            <strong>Spells</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.53327%; height: 27px;">
+            Bruumgaha the Wolf Rider
+          </td>
+
+          <td style="width: 0.495786%; height: 27px;">5</td>
+
+          <td style="width: 0.644522%; height: 27px;">6</td>
+
+          <td style="width: 0.495786%; height: 27px;">-</td>
+
+          <td style="width: 0.6941%; height: 27px;">5</td>
+
+          <td style="width: 0.495786%; height: 27px;">6</td>
+
+          <td style="width: 0.495786%; height: 27px;">8</td>
+
+          <td style="width: 2.61582%; height: 27px;">Melee</td>
+
+          <td style="width: 1.18989%; height: 27px;">-</td>
+
+          <td style="width: 14.0659%; height: 27px;">Might (Super)</td>
+
+          <td style="width: 1.83955%; height: 27px;">1 Fighter</td>
+
+          <td style="width: 10.5939%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.53327%; height: 27px;">Chamosij the Phantom</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.644522%; height: 27px;">1</td>
+
+          <td style="width: 0.495786%; height: 27px;">6</td>
+
+          <td style="width: 0.6941%; height: 27px;">5</td>
+
+          <td style="width: 0.495786%; height: 27px;">6</td>
+
+          <td style="width: 0.495786%; height: 27px;">5</td>
+
+          <td style="width: 2.61582%; height: 27px;">Staff</td>
+
+          <td style="width: 1.18989%; height: 27px;">10</td>
+
+          <td style="width: 14.0659%; height: 27px;">Non-Corporeal</td>
+
+          <td style="width: 1.83955%; height: 27px;">2 Mage</td>
+
+          <td style="width: 10.5939%; height: 27px;">
+            Phantom Warriors, Phantom Beast
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.53327%; height: 27px;">Delmee the Slinger</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.644522%; height: 27px;">2</td>
+
+          <td style="width: 0.495786%; height: 27px;">7</td>
+
+          <td style="width: 0.6941%; height: 27px;">4</td>
+
+          <td style="width: 0.495786%; height: 27px;">8</td>
+
+          <td style="width: 0.495786%; height: 27px;">5</td>
+
+          <td style="width: 2.61582%; height: 27px;">Bow</td>
+
+          <td style="width: 1.18989%; height: 27px;">-</td>
+
+          <td style="width: 14.0659%; height: 27px;">Legendary, Lucky</td>
+
+          <td style="width: 1.83955%; height: 27px;">1 Fighter</td>
+
+          <td style="width: 10.5939%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.53327%; height: 27px;">Pennigal the Cavalier</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.644522%; height: 27px;">6</td>
+
+          <td style="width: 0.495786%; height: 27px;">-</td>
+
+          <td style="width: 0.6941%; height: 27px;">6</td>
+
+          <td style="width: 0.495786%; height: 27px;">6</td>
+
+          <td style="width: 0.495786%; height: 27px;">7</td>
+
+          <td style="width: 2.61582%; height: 27px;">Melee</td>
+
+          <td style="width: 1.18989%; height: 27px;">-</td>
+
+          <td style="width: 14.0659%; height: 27px;">
+            Armsmaster, First Strike, Legendary
+          </td>
+
+          <td style="width: 1.83955%; height: 27px;">1 Fighter</td>
+
+          <td style="width: 10.5939%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 5.53327%; height: 27px;">Yussif the Wise</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.644522%; height: 27px;">1</td>
+
+          <td style="width: 0.495786%; height: 27px;">7</td>
+
+          <td style="width: 0.6941%; height: 27px;">5</td>
+
+          <td style="width: 0.495786%; height: 27px;">6</td>
+
+          <td style="width: 0.495786%; height: 27px;">5</td>
+
+          <td style="width: 2.61582%; height: 27px;">Staff</td>
+
+          <td style="width: 1.18989%; height: 27px;">7.5</td>
+
+          <td style="width: 14.0659%; height: 27px;">Sage (Super)</td>
+
+          <td style="width: 1.83955%; height: 27px;">1 Mage</td>
+
+          <td style="width: 10.5939%; height: 27px;">
+            Warp Wood, Shatter, Metal Fires
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Fame_10"></a>
+      <strong>Fame 10, Hiring Cost = 200g, Upkeep 4g</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 80%; height: 147px;"
+      height="164"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 12px; text-align: center;">
+          <td style="width: 6.09417%; height: 12px;">
+            <strong>Name</strong>
+          </td>
+
+          <td style="width: 0.713512%; height: 12px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.842836%; height: 12px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 0.545365%; height: 12px;">
+            <strong>Ranged</strong>
+          </td>
+
+          <td style="width: 0.793258%; height: 12px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.644522%; height: 12px;">
+            <strong>Resist</strong>
+          </td>
+
+          <td style="width: 0.793257%; height: 12px;">
+            <strong>HP</strong>
+          </td>
+
+          <td style="width: 2.87912%; height: 12px;">
+            <strong>Items</strong>
+          </td>
+
+          <td style="width: 1.21318%; height: 12px;">
+            <strong>Caster</strong>
+          </td>
+
+          <td style="width: 15.8082%; height: 12px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 2.15412%; height: 12px;">
+            <strong>Picks</strong>
+          </td>
+
+          <td style="width: 11.6918%; height: 12px;">
+            <strong>Spells</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 6.09417%; height: 27px;">Himani the Trickster</td>
+
+          <td style="width: 0.713512%; height: 27px;">4</td>
+
+          <td style="width: 0.842836%; height: 27px;">6</td>
+
+          <td style="width: 0.545365%; height: 27px;">-</td>
+
+          <td style="width: 0.793258%; height: 27px;">6</td>
+
+          <td style="width: 0.644522%; height: 27px;">6</td>
+
+          <td style="width: 0.793257%; height: 27px;">8</td>
+
+          <td style="width: 2.87912%; height: 27px;">Dual Melee</td>
+
+          <td style="width: 1.21318%; height: 27px;">-</td>
+
+          <td style="width: 15.8082%; height: 27px;">
+            Agility, Charmed, Lucky
+          </td>
+
+          <td style="width: 2.15412%; height: 27px;">1 Fighter</td>
+
+          <td style="width: 11.6918%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 6.09417%; height: 27px;">Krugow the Shaman</td>
+
+          <td style="width: 0.713512%; height: 27px;">4</td>
+
+          <td style="width: 0.842836%; height: 27px;">2</td>
+
+          <td style="width: 0.545365%; height: 27px;">7</td>
+
+          <td style="width: 0.793258%; height: 27px;">6</td>
+
+          <td style="width: 0.644522%; height: 27px;">6</td>
+
+          <td style="width: 0.793257%; height: 27px;">7</td>
+
+          <td style="width: 2.87912%; height: 27px;">Staff</td>
+
+          <td style="width: 1.21318%; height: 27px;">7.5</td>
+
+          <td style="width: 15.8082%; height: 27px;">
+            Healer, Missile Immunity, Purify, Swimming
+          </td>
+
+          <td style="width: 2.15412%; height: 27px;">2 Mage</td>
+
+          <td style="width: 11.6918%; height: 27px;">
+            Stone Skin, Earth to Mud, Elemental Armor
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 6.09417%; height: 27px;">Lythdria the Crusader</td>
+
+          <td style="width: 0.713512%; height: 27px;">4</td>
+
+          <td style="width: 0.842836%; height: 27px;">7</td>
+
+          <td style="width: 0.545365%; height: 27px;">-</td>
+
+          <td style="width: 0.793258%; height: 27px;">5</td>
+
+          <td style="width: 0.644522%; height: 27px;">7</td>
+
+          <td style="width: 0.793257%; height: 27px;">7</td>
+
+          <td style="width: 2.87912%; height: 27px;">Melee</td>
+
+          <td style="width: 1.21318%; height: 27px;">5</td>
+
+          <td style="width: 15.8082%; height: 27px;">Accuracy, Might</td>
+
+          <td style="width: 2.15412%; height: 27px;">1 Any#</td>
+
+          <td style="width: 11.6918%; height: 27px;">
+            Star Fires, Holy Weapon, Heroism
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 6.09417%; height: 27px;">Vylarro the Acolyte</td>
+
+          <td style="width: 0.713512%; height: 27px;">4</td>
+
+          <td style="width: 0.842836%; height: 27px;">3</td>
+
+          <td style="width: 0.545365%; height: 27px;">7</td>
+
+          <td style="width: 0.793258%; height: 27px;">5</td>
+
+          <td style="width: 0.644522%; height: 27px;">6</td>
+
+          <td style="width: 0.793257%; height: 27px;">5</td>
+
+          <td style="width: 2.87912%; height: 27px;">Staff</td>
+
+          <td style="width: 1.21318%; height: 27px;">10</td>
+
+          <td style="width: 15.8082%; height: 27px;">
+            Healer, Missile Immunity, Prayermaster
+          </td>
+
+          <td style="width: 2.15412%; height: 27px;">1 Mage</td>
+
+          <td style="width: 11.6918%; height: 27px;">
+            Healing, Holy Armor, True Sight
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 6.09417%; height: 27px;">Zyntor the Commander</td>
+
+          <td style="width: 0.713512%; height: 27px;">4</td>
+
+          <td style="width: 0.842836%; height: 27px;">7</td>
+
+          <td style="width: 0.545365%; height: 27px;">-</td>
+
+          <td style="width: 0.793258%; height: 27px;">5</td>
+
+          <td style="width: 0.644522%; height: 27px;">6</td>
+
+          <td style="width: 0.793257%; height: 27px;">8</td>
+
+          <td style="width: 2.87912%; height: 27px;">Melee</td>
+
+          <td style="width: 1.21318%; height: 27px;">-</td>
+
+          <td style="width: 15.8082%; height: 27px;">
+            Armsmaster, Constitution, Leadership
+          </td>
+
+          <td style="width: 2.15412%; height: 27px;">2 Fighter</td>
+
+          <td style="width: 11.6918%; height: 27px;">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Fame_20"></a>
+      <strong>Fame 20, Hiring Cost = 300g, Upkeep 6g</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 80%; height: 175px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 12px; text-align: center;">
+          <td style="width: 5.25511%; height: 12px;">
+            <strong>Name</strong>
+          </td>
+
+          <td style="width: 0.495786%; height: 12px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.53408%; height: 12px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 0.495786%; height: 12px;">
+            <strong>Ranged</strong>
+          </td>
+
+          <td style="width: 0.53408%; height: 12px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.514933%; height: 12px;">
+            <strong>Resist</strong>
+          </td>
+
+          <td style="width: 0.514933%; height: 12px;">
+            <strong>HP</strong>
+          </td>
+
+          <td style="width: 2.62148%; height: 12px;">
+            <strong>Items</strong>
+          </td>
+
+          <td style="width: 0.514933%; height: 12px;">
+            <strong>Caster</strong>
+          </td>
+
+          <td style="width: 13.5942%; height: 12px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 1.63182%; height: 12px;">
+            <strong>Picks</strong>
+          </td>
+
+          <td style="width: 9.98976%; height: 12px;">
+            <strong>Spells</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.25511%; height: 27px;">Draythe the Summoner</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.53408%; height: 27px;">1</td>
+
+          <td style="width: 0.495786%; height: 27px;">8</td>
+
+          <td style="width: 0.53408%; height: 27px;">5</td>
+
+          <td style="width: 0.514933%; height: 27px;">7</td>
+
+          <td style="width: 0.514933%; height: 27px;">6</td>
+
+          <td style="width: 2.62148%; height: 27px;">Staff</td>
+
+          <td style="width: 0.514933%; height: 27px;">12.5</td>
+
+          <td style="width: 13.5942%; height: 27px;">Missile Immunity, Sage</td>
+
+          <td style="width: 1.63182%; height: 27px;">1 Mage</td>
+
+          <td style="width: 9.98976%; height: 27px;">
+            Fire Elemental, Air Elemental, Earth Elemental
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.25511%; height: 27px;">Eraane the Bandit</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.53408%; height: 27px;">5</td>
+
+          <td style="width: 0.495786%; height: 27px;">7</td>
+
+          <td style="width: 0.53408%; height: 27px;">5</td>
+
+          <td style="width: 0.514933%; height: 27px;">6</td>
+
+          <td style="width: 0.514933%; height: 27px;">7</td>
+
+          <td style="width: 2.62148%; height: 27px;">Bow</td>
+
+          <td style="width: 0.514933%; height: 27px;">-</td>
+
+          <td style="width: 13.5942%; height: 27px;">Accuracy, Agility</td>
+
+          <td style="width: 1.63182%; height: 27px;">2 Fighter</td>
+
+          <td style="width: 9.98976%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.25511%; height: 27px;">Mephek the Dark Elf</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.53408%; height: 27px;">7</td>
+
+          <td style="width: 0.495786%; height: 27px;">7</td>
+
+          <td style="width: 0.53408%; height: 27px;">5</td>
+
+          <td style="width: 0.514933%; height: 27px;">9</td>
+
+          <td style="width: 0.514933%; height: 27px;">7</td>
+
+          <td style="width: 2.62148%; height: 27px;">Melee / Staff</td>
+
+          <td style="width: 0.514933%; height: 27px;">7.5</td>
+
+          <td style="width: 13.5942%; height: 27px;">Arcane Power</td>
+
+          <td style="width: 1.63182%; height: 27px;">3 Any</td>
+
+          <td style="width: 9.98976%; height: 27px;">
+            Life Drain, Wraith Form, Animate Dead
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.25511%; height: 28px;">Nelthu the Enchantress</td>
+
+          <td style="width: 0.495786%; height: 28px;">4</td>
+
+          <td style="width: 0.53408%; height: 28px;">1</td>
+
+          <td style="width: 0.495786%; height: 28px;">8</td>
+
+          <td style="width: 0.53408%; height: 28px;">5</td>
+
+          <td style="width: 0.514933%; height: 28px;">6</td>
+
+          <td style="width: 0.514933%; height: 28px;">5</td>
+
+          <td style="width: 2.62148%; height: 28px;">Staff</td>
+
+          <td style="width: 0.514933%; height: 28px;">10</td>
+
+          <td style="width: 13.5942%; height: 28px;">
+            Arcane Power, Missile Immunity
+          </td>
+
+          <td style="width: 1.63182%; height: 28px;">2 Mage</td>
+
+          <td style="width: 9.98976%; height: 28px;">
+            Blur, Invisibility, Haste
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 5.25511%; height: 27px;">Savvien the Curate</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.53408%; height: 27px;">3</td>
+
+          <td style="width: 0.495786%; height: 27px;">7</td>
+
+          <td style="width: 0.53408%; height: 27px;">5</td>
+
+          <td style="width: 0.514933%; height: 27px;">6</td>
+
+          <td style="width: 0.514933%; height: 27px;">5</td>
+
+          <td style="width: 2.62148%; height: 27px;">Staff</td>
+
+          <td style="width: 0.514933%; height: 27px;">10</td>
+
+          <td style="width: 13.5942%; height: 27px;">
+            Healer, Missile Immunity, Prayermaster, Sage
+          </td>
+
+          <td style="width: 1.63182%; height: 27px;">1 Mage</td>
+
+          <td style="width: 9.98976%; height: 27px;">
+            Healing, Raise Dead, Mass Healing
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 5.25511%; height: 27px;">Trugoron the Guardian</td>
+
+          <td style="width: 0.495786%; height: 27px;">4</td>
+
+          <td style="width: 0.53408%; height: 27px;">7</td>
+
+          <td style="width: 0.495786%; height: 27px;">-</td>
+
+          <td style="width: 0.53408%; height: 27px;">5</td>
+
+          <td style="width: 0.514933%; height: 27px;">7</td>
+
+          <td style="width: 0.514933%; height: 27px;">9</td>
+
+          <td style="width: 2.62148%; height: 27px;">Melee</td>
+
+          <td style="width: 0.514933%; height: 27px;">-</td>
+
+          <td style="width: 13.5942%; height: 27px;">
+            Agility (Super), Constitution (Super)
+          </td>
+
+          <td style="width: 1.63182%; height: 27px;">1 Fighter</td>
+
+          <td style="width: 9.98976%; height: 27px;">-</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <h5>
+      <a id="Fame_40_Champions"></a>
+      <strong>Fame 40 (Champions), Hiring Cost = 500g, Upkeep 10g</strong>
+    </h5>
+
+    <table
+      style="border-collapse: collapse; width: 80%; height: 282px;"
+      cellspacing="4"
+      cellpadding="4"
+      border="6"
+    >
+      <tbody>
+        <tr style="height: 12px; text-align: center;">
+          <td style="width: 5.46374%; height: 12px;">
+            <strong>Name</strong>
+          </td>
+
+          <td style="width: 0.513611%; height: 12px;">
+            <strong>Moves</strong>
+          </td>
+
+          <td style="width: 0.513611%; height: 12px;">
+            <strong>Melee</strong>
+          </td>
+
+          <td style="width: 0.513611%; height: 12px;">
+            <strong>Ranged</strong>
+          </td>
+
+          <td style="width: 0.513611%; height: 12px;">
+            <strong>Defense</strong>
+          </td>
+
+          <td style="width: 0.513611%; height: 12px;">
+            <strong>Resist</strong>
+          </td>
+
+          <td style="width: 0.513611%; height: 12px;">
+            <strong>HP</strong>
+          </td>
+
+          <td style="width: 2.71409%; height: 12px;">
+            <strong>Items</strong>
+          </td>
+
+          <td style="width: 0.671644%; height: 12px;">
+            <strong>Caster</strong>
+          </td>
+
+          <td style="width: 14.186%; height: 12px;">
+            <strong>Skills</strong>
+          </td>
+
+          <td style="width: 1.71815%; height: 12px;">
+            <strong>Picks</strong>
+          </td>
+
+          <td style="width: 10.3022%; height: 12px;">
+            <strong>Spells</strong>
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">
+            Arkhellien the Realm Walker
+          </td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">1</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 2.71409%; height: 27px;">Staff</td>
+
+          <td style="width: 0.671644%; height: 27px;">12.5</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Arcane Power, Plane Shift, Sage
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">2 Mage</td>
+
+          <td style="width: 10.3022%; height: 27px;">
+            Guardian Wind, Banish, Magic Immunity
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">Freck the Troll</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">9</td>
+
+          <td style="width: 0.513611%; height: 27px;">-</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 0.513611%; height: 27px;">9</td>
+
+          <td style="width: 2.71409%; height: 27px;">Melee</td>
+
+          <td style="width: 0.671644%; height: 27px;">-</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Constitution, Might, Regeneration
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">1 Fighter</td>
+
+          <td style="width: 10.3022%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">Gregorio the Gladiator</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">9</td>
+
+          <td style="width: 0.513611%; height: 27px;">-</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 0.513611%; height: 27px;">7</td>
+
+          <td style="width: 0.513611%; height: 27px;">9</td>
+
+          <td style="width: 2.71409%; height: 27px;">Melee</td>
+
+          <td style="width: 0.671644%; height: 27px;">-</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Accuracy, Agility, Armor Piercing, Constitution, First Strike,
+            Legendary, Might
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">1 Fighter</td>
+
+          <td style="width: 10.3022%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">Nobir the Marksman</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">9</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 0.513611%; height: 27px;">6</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 2.71409%; height: 27px;">Bow</td>
+
+          <td style="width: 0.671644%; height: 27px;">-</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Accuracy (Super), Forester, Leadership, Legendary
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">2 Fighter</td>
+
+          <td style="width: 10.3022%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">
+            Quinne the Blademistress
+          </td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 0.513611%; height: 27px;">-</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 0.513611%; height: 27px;">6</td>
+
+          <td style="width: 0.513611%; height: 27px;">7</td>
+
+          <td style="width: 2.71409%; height: 27px;">Dual Melee</td>
+
+          <td style="width: 0.671644%; height: 27px;">-</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Accuracy (Super), Agility, Charmed, Lucky, Thrown 4
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">-</td>
+
+          <td style="width: 10.3022%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">Rovan the Centaur</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">6</td>
+
+          <td style="width: 0.513611%; height: 27px;">7</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 0.513611%; height: 27px;">7</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 2.71409%; height: 27px;">Bow</td>
+
+          <td style="width: 0.671644%; height: 27px;">-</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Accuracy, Lucky, Pathfinding, Scouting 3
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">3 Fighter</td>
+
+          <td style="width: 10.3022%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">Slyloc the Nightblade</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 0.513611%; height: 27px;">-</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 0.513611%; height: 27px;">9</td>
+
+          <td style="width: 0.513611%; height: 27px;">7</td>
+
+          <td style="width: 2.71409%; height: 27px;">Melee</td>
+
+          <td style="width: 0.671644%; height: 27px;">-</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Accuracy, Invisibility, Might
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">2 Fighter</td>
+
+          <td style="width: 10.3022%; height: 27px;">-</td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">Synlia the Scourge</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">1</td>
+
+          <td style="width: 0.513611%; height: 27px;">*3</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 0.513611%; height: 27px;">10</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 2.71409%; height: 27px;">Staff</td>
+
+          <td style="width: 0.671644%; height: 27px;">15</td>
+
+          <td style="width: 14.186%; height: 27px;">Arcane Power, *Chaos</td>
+
+          <td style="width: 1.71815%; height: 27px;">-</td>
+
+          <td style="width: 10.3022%; height: 27px;">
+            Disrupt, Magic Vortex, Disintigrate, Call Chaos
+          </td>
+        </tr>
+
+        <tr style="height: 27px; text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">
+            Xeth Nyrrow the Ancient
+          </td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 0.513611%; height: 27px;">6</td>
+
+          <td style="width: 0.513611%; height: 27px;">7</td>
+
+          <td style="width: 0.513611%; height: 27px;">8</td>
+
+          <td style="width: 2.71409%; height: 27px;">Melee / Staff</td>
+
+          <td style="width: 0.671644%; height: 27px;">12.5</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Accuracy, Arcane Power (Super), Might (Super), Purify
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">-</td>
+
+          <td style="width: 10.3022%; height: 27px;">
+            Crack's Call, Iron Skin, Entangle, Call Lightning
+          </td>
+        </tr>
+
+        <tr style="text-align: center;">
+          <td style="width: 5.46374%; height: 27px;">Zarvonax the Fiend</td>
+
+          <td style="width: 0.513611%; height: 27px;">4</td>
+
+          <td style="width: 0.513611%; height: 27px;">9</td>
+
+          <td style="width: 0.513611%; height: 27px;">-</td>
+
+          <td style="width: 0.513611%; height: 27px;">5</td>
+
+          <td style="width: 0.513611%; height: 27px;">6</td>
+
+          <td style="width: 0.513611%; height: 27px;">9</td>
+
+          <td style="width: 2.71409%; height: 27px;">Melee</td>
+
+          <td style="width: 0.671644%; height: 27px;">7.5</td>
+
+          <td style="width: 14.186%; height: 27px;">
+            Cause Fear, Might (Super)
+          </td>
+
+          <td style="width: 1.71815%; height: 27px;">3 Any#</td>
+
+          <td style="width: 10.3022%; height: 27px;">Terror, Berserk</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+
+    <p></p>
+
+    <hr />
+    <hr />
+
+    <h4>
+      <strong> <a id="Version_History"></a>Version History</strong>
+    </h4>
+	<ul>
+	  <li>
+		<strong>
+		  Version 1.0.3 (3-17-2023): Fixed a bug when a neutral Arch Angel unit casts the Healing spell.
+		</strong>
+	  </li>
+	  <li>
+		<strong>
+		  Version 1.0.2 (3-16-2023): Fixed several units not showing graphics.
+		</strong>
+	  </li>
+	  <li>
+		<strong>
+		  Version 1.0.1 (3-14-2023): Fixed a bug with Atlantean Bowmen not working in battle.
+		</strong>
+	  </li>
+	  <li>
+		<strong>
+		  Version 1.0.0 (3-13-2023): Initial release.
+		</strong>
+	  </li>
+	</ul>
+	<hr />
+	
+    <h4>
+      <strong> <a id="Contacting_me"></a>Contacting me </strong>
+    </h4>
+    <p>
+      <strong> <br />Discord (preferred): Xeth Nyrrow#4312 </strong>
+    </p>
+
+    <p>
+      <strong
+        >Steam: https://steamcommunity.com/profiles/76561198052343879
+        <br />
+      </strong>
+    </p>
+
+    <p>
+      <strong
+        >Email:
+        <a href="mailto:xethnyrrow@hotmail.com">xethnyrrow@hotmail.com</a>
+      </strong>
+    </p>
+
+    <h2>
+      <em>
+        <strong>~ Xeth Nyrrow ~</strong>
+      </em>
+    </h2>
+  </body>
+</html>
